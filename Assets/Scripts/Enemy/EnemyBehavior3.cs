@@ -14,7 +14,7 @@ public class EnemyBehavior3 : IEnemyBehavior
 
     public void Execute()
     {
-        // Синхронизация с состоянием игрока
+        
         if (player != null && player.IsAttacking)
         {
             enemy.PlayAttackAnimation();

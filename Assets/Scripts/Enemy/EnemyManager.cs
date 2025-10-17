@@ -38,25 +38,25 @@ public class EnemyManager : MonoBehaviour
 
     private void Update()
     {
-        // Дополнительная логика управления врагами
+        
     }
 
     public void OnPlayerAttackChanged(int attackIndex)
     {
-        // Смена врага при смене атаки игрока
+        
         EnemyType nextType = (EnemyType)attackIndex;
         SpawnEnemy(nextType);
     }
 
     private void SpawnEnemy(EnemyType type)
     {
-        // Возвращаем предыдущего врага в пул
+       
         if (currentEnemy != null)
         {
             enemyPool.ReturnEnemy(currentEnemyType, currentEnemy);
         }
 
-        // Получаем нового врага
+       
         currentEnemyType = type;
         currentEnemy = enemyPool.GetEnemy(type);
 

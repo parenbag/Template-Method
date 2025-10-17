@@ -18,13 +18,13 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        // Смена атаки по клавише Q
+        
         if (Input.GetKeyDown(KeyCode.Q))
         {
             SwitchToNextAttack();
         }
 
-        // Атака по клавише пробел
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             PerformAttack();
@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
 
         Debug.Log($"Switched to: {currentAttack.GetAttackName()}");
 
-        // Оповещаем о смене атаки (для смены врагов)
+        
         EnemyManager.Instance?.OnPlayerAttackChanged(currentAttackIndex);
     }
 
@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
             currentAttack.Attack();
             IsAttacking = true;
 
-            // Сбрасываем флаг атаки через небольшое время
+            
             Invoke(nameof(ResetAttackFlag), 0.5f);
         }
     }

@@ -11,14 +11,14 @@ public class EnemyBehavior1 : IEnemyBehavior
         hasAttacked = false;
         enemy.Show();
 
-        // Ќемедленно выполн€ем атаку при по€влении
+        
         enemy.PlayAttackAnimation();
         hasAttacked = true;
     }
 
     public void Execute()
     {
-        // ѕосле первой атаки просто бездействуем
+       
         if (hasAttacked)
         {
             enemy.PlayIdleAnimation();

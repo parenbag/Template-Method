@@ -13,7 +13,7 @@ public class GameBootstrapper : MonoBehaviour
 
     private void InitializeGame()
     {
-        // Находим или создаем основные компоненты
+        
         if (enemyPool == null)
             enemyPool = FindObjectOfType<EnemyPool>();
 

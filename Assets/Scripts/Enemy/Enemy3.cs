@@ -27,6 +27,6 @@ public class Enemy3 : Enemy
 
     public override void Shoot()
     {
-        // Враг №3 не стреляет самостоятельно
+        // Враг 3 не стреляет самостоятельно
     }
 }

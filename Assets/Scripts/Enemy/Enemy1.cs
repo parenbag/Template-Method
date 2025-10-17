@@ -27,6 +27,6 @@ public class Enemy1 : Enemy
 
     public override void Shoot()
     {
-        // Враг №1 не стреляет
+        // Враг 1 не стреляет
     }
 }
